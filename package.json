@@ -1,0 +1,35 @@
+{
+  "name": "rootrot",
+  "version": "1.0.0",
+  "description": "a mern stack plant care app",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/libersword/rootrot.git"
+  },
+  "author": "Lindsey Brown",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/libersword/rootrot/issues"
+  },
+  "homepage": "https://github.com/libersword/rootrot#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^5.1.0",
+    "config": "^3.3.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
