@@ -22,7 +22,7 @@ router.post("/", (req, res) => {
       name,
       email,
       password
-    });
+    }); 
 
     //Create Salt & hash
     bcrypt.genSalt(10, (err, salt) => {
