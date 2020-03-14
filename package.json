@@ -1,25 +1,19 @@
 {
-  "name": "rootrot",
+  "name": "mern-stack-jwt",
   "version": "1.0.0",
-  "description": "a mern stack plant care app",
+  "description": "",
   "main": "server.js",
   "scripts": {
     "client-install": "npm install --prefix client",
     "start": "node server.js",
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONGIF_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/libersword/rootrot.git"
-  },
+  "keywords": [],
   "author": "Lindsey Brown",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/libersword/rootrot/issues"
-  },
-  "homepage": "https://github.com/libersword/rootrot#readme",
+  "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "concurrently": "^5.1.0",

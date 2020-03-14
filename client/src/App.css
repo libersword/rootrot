@@ -1,38 +1,101 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', 'Arial', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, h2, h3, h4, h5, a {
+font-family: 'Montserrat', 'Arial', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.formContainer {
+display:flex;
+flex-direction: column;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.addPlantForm,
+.searchPlant {
+ width: 50%;
+}
+
+.plantWrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  flex-wrap:wrap;
 }
 
-.App-link {
-  color: #61dafb;
+nav {
+  background-color: #90aa86;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navLink {
+  color: #fff;
+}
+
+.navImg {
+	background-image:url('./components/assets/rotLogo.png');
+	background-size:contain;
+	height: 80px;
+    width: 200px;
+    background-repeat: no-repeat;
+}
+
+
+/*SCHEDULE*/
+.wateringWrapper {
+display:flex;
+flex-direction: row;
+justify-content: center;
+align-content: center;
+align-items: center;
+}
+
+.wateringName {
+	margin-right: 30px;
+}
+* {
+	box-sizing: border-box;
+}
+
+.countdown-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.countdown-item {
+	color: #111;
+	font-size: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+    line-height: 30px;
+	margin: 10px;
+    padding-top: 10px;
+	position: relative;
+	width: 100px;
+	height: 100px;
+}
+
+.countdown-item span {
+	color: #333;
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.countdown-svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100px;
+	height: 100px;
 }

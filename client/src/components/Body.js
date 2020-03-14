@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import PlantCrew from "./PlantCrew";
 import AddPlant from "./AddPlant";
+import Schedule from "./Schedule";
 import styled from "styled-components";
 
 const SplitPane = styled.div`
@@ -55,9 +56,13 @@ const Body = () => {
             </MenuItem>
             </MenuItemLink>
             <MenuItemLink href="/add-plant">
-
             <MenuItem>
               Add Plant
+            </MenuItem>
+            </MenuItemLink>
+            <MenuItemLink href="/watering-schedule">
+            <MenuItem>
+              Watering Schedule
             </MenuItem>
             </MenuItemLink>
           </Menu>
@@ -65,6 +70,7 @@ const Body = () => {
         <RightPane>
           <Route exact path="/" component={PlantCrew} />
           <Route path="/add-plant" component={AddPlant} />
+          <Route path="/watering-schedule" component={Schedule} />
         </RightPane>
       </SplitPane>
     </Router>
